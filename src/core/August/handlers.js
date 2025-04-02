@@ -8,21 +8,29 @@ const handlers = {
   async welcome({ groupname, from, participants, participantsCount }) {
 				const taggedParticipants = participants.map((participants) => `@${participants.split("@")[0]}`).join(" ");
 				const welcomeMessage = groupSettings.welcomeMsg;
-    return `𝒜ugust Bot
-							
-Selamat datang di *${groupname}* kak ${taggedParticipants}.
-        
-${welcomeMessage}
-          
-Grup: ${groupname}
-Jumlah member: ${participantsCount} member`;
+    return `. ֹ 𝅄 ⣤⣿⣶⣄⣠⣾⣿⣤ 𝅄 ֹ 
+ 하세요! 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝐀υ𝗀υ𝗌𝗍 𝐒𝗍ⱺ𝗋𝖾 ꞌꞋ ࣪
+ (𝓗) 𝖾𝗋 𝗉𝗂𝗇𝗄─𝖻𝗋𝖺𝗂𝖽𝖾𝖽 𝖻𝖾𝖺𝗎𝗍𝗒 ׄ 𝅄 ୨ৎ 
+ ᠂᠂ ─ׅ─ׂ┄ 𝗌𝗍𝗈𝗅𝖾 𝗁𝖾𝖺𝗋𝗍𝗌 ׄ 𝆺𝅥 ⊂⊃
+ 𝅄 ׁ 𝗆𝖺𝗂𝗇𝗅𝗒 𝗋𝖾𝖺𝖽 ⃘◌ 𝗍𝗁𝖾 𝗋𝗎𝗅𝖾𝗌 𓂋 ֺ ࣭ 
+ ${taggedParticipants}
+ 𔘓‌︱𝒞𝗈𝗇𝗍𝖺𝖼𝗍 𝗼𝘄𝗻𝗲𝗿 १ ׄ 
+ ⸦⸧ “ 083895188960︱ꤥ‌ 
+ ࿙⃛‌࿚⃛࿙⃛‌࿚⃛࿙⃛‌࿚⃛࿙⃛‌࿚⃛ ࿙⃛‌࿚⃛࿙⃛‌࿚⃛࿙⃛‌࿚⃛࿙⃛‌࿚⃛`;
+ 
   },
 
   async out({ participants }) {
     const taggedParticipants = participants.map((participant) => `@${participant.split("@")[0]}`).join(" ");
-    return `𝒜ugust Bot
-
-Selamat jalan kak ${taggedParticipants}`;},
+    return `. ֹ 𝅄 ⣤⣿⣶⣄⣠⣾⣿⣤ 𝅄 ֹ 
+    하세요! Good Bye ꞌꞋ ࣪
+    (𝓗) 𝖾𝗋 𝗉𝗂𝗇𝗄─𝖻𝗋𝖺𝗂𝖽𝖾𝖽 𝖻𝖾𝖺𝗎𝗍𝗒 ׄ 𝅄 ୨ৎ 
+    ᠂᠂ ─ׅ─ׂ┄ 𝗌𝗍𝗈𝗅𝖾 𝗁𝖾𝖺𝗋𝗍𝗌 ׄ 𝆺𝅥 ⊂⊃
+    𝅄 ׁ 𝗆𝖺𝗂𝗇𝗅𝗒 𝗋𝖾𝖺𝖽 ⃘◌ 𝗍𝗁𝖾 𝗋𝗎𝗅𝖾𝗌 𓂋 ֺ ࣭ 
+    ${taggedParticipants}
+    𔘓‌︱𝒞𝗈𝗇𝗍𝖺𝖼𝗍 𝗼𝘄𝗻𝗲𝗿 १ ׄ 
+    ⸦⸧ “ 083895188960︱ꤥ‌ 
+    ࿙⃛‌࿚⃛࿙⃛‌࿚⃛࿙⃛‌࿚⃛࿙⃛‌࿚⃛ ࿙⃛‌࿚⃛࿙⃛‌࿚⃛࿙⃛‌࿚⃛࿙⃛‌࿚⃛`;},
   
   async menu() {
     return formatMenu();
