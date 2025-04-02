@@ -55,7 +55,6 @@ const menus = {
       "/payment",
       "/testimoni",
       "/web",
-      "/help",
     ],
     admin: [
       "/alltag [pesan kamu]",
