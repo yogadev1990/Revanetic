@@ -55,7 +55,6 @@ class Augustbot {
       from,
       name,
       participantCount,
-      remainingTime,
       bufferImage,
       admin,
       botadmin,

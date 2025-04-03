@@ -24,7 +24,7 @@ class Chizurubot {
     } = req.body;
 
     const responFormatter = new ResponFormatter();
-    const { isActive, groupSettings} = await checkSubscription(from);
+    const { isActive, remainingTime, groupSettings} = await checkSubscription(from);
     
     if (!message.startsWith(PREFIX))
       {
@@ -60,6 +60,7 @@ class Chizurubot {
       name,
       participantCount,
       statusVIP,
+      remainingTime,
       bufferImage,
       admin,
       botadmin,
