@@ -6,7 +6,6 @@ const menus = {
       "/dm ribuan",
       "/dm ganda",
       "/charisma",
-      "/joki spin",
       "/komen",
       "/roomtour",
       "/starlight",
@@ -78,22 +77,22 @@ const menus = {
 `;
     menuText += "╭─•┈─╸𐙚˖˚𝐌𝐎𝐁𝚰𝐋𝐄 𝐋𝐄𝐆𝐄𝐍𝐃𝐒˚˖𐙚\n";
     menuText += menus.ml.map((item) => `┣𐙚 ۫ •  ${item}`).join("\n");
-    menuText += "\n║\n";
+    menuText += "\n│\n";
 
     menuText += "┣•┈─╸𐙚˖˚𝐀𝐏𝐋𝚰𝐊𝐀𝐒𝚰 𝐏𝐑𝐄𝐌𝚰𝐔𝐌˚˖𐙚\n";
     menuText += menus.apk.map((item) => `┣𐙚 ۫ •  ${item}`).join("\n");
-    menuText += "\n║\n";
+    menuText += "\n│\n";
     menuText += "┣•┈─╸𐙚˖˚𝐏𝐑𝐎𝐃𝐔𝐊 𝐋𝐀𝚰𝐍𝐍𝐘𝐀˚˖𐙚\n";
     menuText += menus.other.map((item) => `┣𐙚 ۫ •  ${item}`).join("\n");
-    menuText += "\n║\n";
+    menuText += "\n│\n";
     menuText += "┣•┈─╸𐙚˖˚𝐆𝐄𝐍𝐄𝐑𝐀𝐋 𝐌𝐄𝐍𝐔˚˖𐙚\n";
     menuText += menus.general.map((item) => `┣𐙚 ۫ •  ${item}`).join("\n");
-    menuText += "\n║\n";
+    menuText += "\n│\n";
     menuText += "┣•┈─╸𐙚˖˚𝐀𝐃𝐌𝚰𝐍 𝐌𝐄𝐍𝐔˚˖𐙚\n";
     menuText += menus.admin.map((item) => `┣𐙚 ۫ •  ${item}`).join("\n");
-    menuText += "\n║\n";
+    menuText += "\n│\n";
     menuText += "┣•┈─╸𐙚˖˚𝐀𝐍𝐓𝚰 𝐕𝚰𝐑𝐓𝐄𝐗 𝐎𝐍˚˖𐙚\n";
-    menuText += "\n┗━━━━━━━━━━━━━━━━━━◧";
+    menuText += "┗━━━━━━━━━━━━━━━━━━◧";
   
     return menuText;
   }
