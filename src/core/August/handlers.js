@@ -5,9 +5,8 @@ const axios = require("axios");
 const { saveGroupSettings,} = require("../../lib/helpers.js");
 
 const handlers = {
-  async welcome({ groupname, from, participants, participantsCount }) {
+  async welcome({ participants }) {
 				const taggedParticipants = participants.map((participants) => `@${participants.split("@")[0]}`).join(" ");
-				const welcomeMessage = groupSettings.welcomeMsg;
     return `. ֹ 𝅄 ⣤⣿⣶⣄⣠⣾⣿⣤ 𝅄 ֹ 
  하세요! 𝗐𝖾𝗅𝖼𝗈𝗆𝖾 𝗍𝗈 𝐀υ𝗀υ𝗌𝗍 𝐒𝗍ⱺ𝗋𝖾 ꞌꞋ ࣪
  (𝓗) 𝖾𝗋 𝗉𝗂𝗇𝗄─𝖻𝗋𝖺𝗂𝖽𝖾𝖽 𝖻𝖾𝖺𝗎𝗍𝗒 ׄ 𝅄 ୨ৎ 
