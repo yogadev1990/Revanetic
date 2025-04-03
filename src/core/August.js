@@ -26,7 +26,7 @@ class Augustbot {
     
     if (!message.startsWith(PREFIX))
       {
-        if (await validator.containsLink(message) && groupSettings.antiLink) {
+        if (await validator.containsLink(message)) {
           await axios.post(`${process.env.WA_BOT_URL}/delete-message`, {
             api_key: process.env.WA_BOT_API_KEY,
             sender: device,
@@ -34,7 +34,7 @@ class Augustbot {
             key: key,
           });
           return res.send(responFormatter.line("Maaf, link tidak diizinkan di grup ini.").responAsText());
-        } else if (await validator.containsBadWords(message) && groupSettings.antiToxic) {
+        } else if (await validator.containsBadWords(message)) {
           await axios.post(`${process.env.WA_BOT_URL}/delete-message`, {
             api_key: process.env.WA_BOT_API_KEY,
             sender: device,
@@ -59,7 +59,6 @@ class Augustbot {
       admin,
       botadmin,
       args,
-      groupSettings,
     };
 
     let response;
@@ -171,9 +170,9 @@ class Augustbot {
       participantsCount,
     };
       let response;
-      if (action === "add" && groupSettings.welcome === true) {
+      if (action === "add") {
         response = await handlers.welcome(context);
-      } else if (action === "remove" && groupSettings.out === true) {
+      } else if (action === "remove") {
         response = await handlers.out(context);
       }
   
